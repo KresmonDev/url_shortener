@@ -1,0 +1,36 @@
+ <div class="container p-2">
+
+        <h1>URL Shrinker</h1>
+        <form action="/short_urls" method="POST" class="my-4 form-inline">
+            <label for="full_url" class="sr-only">type an Url : </label>
+            <input name="full_url" id="full_url" type="text" class="form-control col m-2">
+            <button type="submit" class="btn btn-primary m-2">Shrink</button>
+        
+        </form>
+        
+        <table class="table table-info table-responsive m-2">
+            <tHead>
+                <tr>
+                    <th>Full URL</th>
+                    <th>Short URL</th>
+                    <th>Clicks</th>
+                </tr>
+            </tHead>
+            <tbody>
+                {{#if shortUrls}}
+                {{/if}}
+
+                {{#each shortUrls}}
+                <tr>
+                    <td><a href="{{full_url}}">{{full_url}}</a></td>
+                    <td><a href="{{short}}">{{short}}</a></td>
+                    <td><p>{{url_clicks}}</p></td>
+                </tr>
+
+                {{/each}}
+            
+            </tbody>
+        </table>
+
+
+</div>

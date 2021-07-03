@@ -1,0 +1,21 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "Url shortener build using node js & express",
+  "main": "app.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=development nodemon app.js",
+    "start": "cross-env NODE_ENV=production node app.js"
+  },
+  "author": "Soufiane Kremcht",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "mongoose": "^5.12.14",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "shortid": "^2.2.16"
+  }
+}
